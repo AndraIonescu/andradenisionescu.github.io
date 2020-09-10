@@ -16,3 +16,34 @@
 #colored {
   background-color: lightpink;
 }
+
+.my-pic {
+  background-image: url("/assets/images/me_pro.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 80vh;
+
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.mt-10 {
+  margin-top: 10vh;
+}
+
+.mt-100 {
+  margin-top: 100%;
+}
+
+.h-10 {
+  height: 10%;
+}
+.height-inherit {
+  height: inherit;
+}
+
+.pl-40 {
+  padding-left: 40% !important;
+}
