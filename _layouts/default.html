@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+</head>
+<body id="colored">
+<div class="container">
+    <div class="row canvas">
+        {% include navigation.html %}
+        <div class="col-10 align-self-center h-100 white-bg">
+            <div class="row h-100 justify-content-center">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

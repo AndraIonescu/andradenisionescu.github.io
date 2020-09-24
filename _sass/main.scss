@@ -1,0 +1,53 @@
+.current {
+  color: green;
+}
+
+.canvas {
+  height: 80vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.no-border {
+  border: 0 !important;
+  z-index: 1;
+}
+
+#colored {
+  background-color: #f4cae0;
+}
+
+.my-pic {
+  background-image: url("/assets/images/me_pro.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 80vh;
+
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.mt-10 {
+  margin-top: 10vh;
+}
+
+.mt-25vh {
+  margin-top: 25vh;
+}
+
+.mt-35vh {
+  margin-top: 35vh;
+}
+
+.h-10 {
+  height: 10%;
+}
+.height-inherit {
+  height: inherit;
+}
+
+.pl-40 {
+  padding-left: 40% !important;
+}

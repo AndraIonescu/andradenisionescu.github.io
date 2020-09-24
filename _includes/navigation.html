@@ -1,0 +1,27 @@
+<!--<div id="navigation" class="navigation">-->
+<!--    {% for item in site.data.navigation %}-->
+<!--    <a href={{item.link}} {% if page.url == {{item.link}} %} class="current"{% endif %}>-->
+<!--        {{item.name}}-->
+<!--    </a>-->
+<!--    {% endfor %}-->
+<!--</div>-->
+
+<div class="col-2 align-self-center h-100 pr-0">
+    <div class="row h-100 justify-content-center align-content-center white-bg">
+        <div class="col-12 height-inherit">
+
+    <!--    <a class="navbar-brand" href="#">Logo</a>-->
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">-->
+<!--        <div class="navbar-nav">-->
+            {% for item in site.data.navigation %}
+            <div class="row h-10 align-content-center {% if forloop.first %}mt-25vh{% endif %}">
+                <a class="col-10 pl-40" href="{{item.link}}">{{ item.name }}</a>
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>

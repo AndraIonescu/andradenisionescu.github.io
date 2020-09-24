@@ -1,1 +1,32 @@
-Hello world
+---
+title: Andra Ionescu
+my-title: PhD Candidate @ TU Delft
+city: Den Haag, Netherlands
+---
+
+<div class="col-8">
+    <div class="row justify-content-center mt-10">
+            <h1>{{page.title}}</h1>
+    </div>
+
+    <div class="row justify-content-center">
+            <h4>{{page.my-title}}</h4>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-10">
+            {% include aboutme.html city=page.city %}
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <a class="pr-2" href="https://twitter.com/andradenisio" target="_blank">Twitter</a> |
+        <a class="pr-2 pl-2" href="https://www.linkedin.com/in/andra-denis-ionescu-701857b0/" target="_blank">LinkedIn</a> |
+        <a class="pl-2" href="https://github.com/AndraIonescu" target="_blank">GitHub</a>
+    </div>
+</div>
+
+<div class="col-4 pr-0">
+    <div class="my-pic"></div>
+</div>
+
