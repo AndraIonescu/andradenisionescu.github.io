@@ -1,11 +1,26 @@
+.container {
+  min-width: 70vw;
+  font-family: Verdana;
+}
+
 .current {
   color: green;
 }
 
 .canvas {
-  height: 80vh;
+  min-height: 80vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
+}
+
+.navigation {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+.content {
+  min-height: 80vh;
 }
 
 .no-border {
@@ -14,7 +29,12 @@
 }
 
 #colored {
+  background-image: radial-gradient(white 15%, transparent 16%),
+  radial-gradient(white 15%, transparent 16%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
   background-color: #f4cae0;
+
 }
 
 .my-pic {
@@ -48,6 +68,35 @@
   height: inherit;
 }
 
-.pl-40 {
-  padding-left: 40% !important;
+.pl-30 {
+  padding-left: 30% !important;
+}
+
+.blog-style {
+  margin-top: 10vh;
+  padding: 1vh 2vw;
+}
+
+.mb10 {
+  margin-bottom: 10vh;
+}
+
+.mb3 {
+  margin-bottom: 3vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.item-text {
+  padding: 0 3vw;
+}
+
+div a {
+  color: #b7306b;
+}
+
+div a:hover {
+  color: #fdbad3;
 }

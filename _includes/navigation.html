@@ -1,27 +1,37 @@
-<!--<div id="navigation" class="navigation">-->
-<!--    {% for item in site.data.navigation %}-->
-<!--    <a href={{item.link}} {% if page.url == {{item.link}} %} class="current"{% endif %}>-->
-<!--        {{item.name}}-->
-<!--    </a>-->
-<!--    {% endfor %}-->
-<!--</div>-->
+<div class="content navigation pr-0 mt-5">
+    <!--    <div class="justify-content-center align-content-center white-bg">-->
+    <div class="col-12">
+        {% for item in site.data.navigation %}
+        <div class="row pl-30 mt-5 " id="{{item.name}}">
+            <!--                <div class="row pl-30 {% if forloop.first %}mt-25vh {% else %} mt-5 {% endif %}" id="{{item.name}}">-->
 
-<div class="col-2 align-self-center h-100 pr-0">
-    <div class="row h-100 justify-content-center align-content-center white-bg">
-        <div class="col-12 height-inherit">
+            <h5><a href="{{item.link}}">{{ item.name }}</a></h5>
+        </div>
+        {% endfor %}
 
-    <!--    <a class="navbar-brand" href="#">Logo</a>-->
-<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--        <span class="navbar-toggler-icon"></span>-->
-<!--    </button>-->
-<!--    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">-->
-<!--        <div class="navbar-nav">-->
-            {% for item in site.data.navigation %}
-            <div class="row h-10 align-content-center {% if forloop.first %}mt-25vh{% endif %}">
-                <a class="col-10 pl-40" href="{{item.link}}">{{ item.name }}</a>
+        <div class="row mt-5" style="font-size: 3em;">
+            <div class="col-12">
+                <div class="row pl-30">
+                    <a class="pr-2" href="https://twitter.com/andradenisio" target="_blank" title="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="row pl-30">
+                    <a class="pr-2 pl-2" href="https://www.linkedin.com/in/andra-denis-ionescu-701857b0/"
+                       target="_blank" title="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <div class="row pl-30">
+                    <a class="pl-2" href="https://github.com/AndraIonescu" target="_blank" title="GitHub">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
             </div>
-
-            {% endfor %}
         </div>
     </div>
 </div>
+
+
