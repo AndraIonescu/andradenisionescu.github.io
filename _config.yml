@@ -22,3 +22,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Analytics
+prod-analytics-id: UA-179530048-1
+dev-analytics-id: UA-179530048-1
