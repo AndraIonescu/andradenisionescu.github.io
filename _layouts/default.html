@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+    {% include google-head.html %}
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
@@ -9,15 +10,39 @@
     {% seo %}
 </head>
 <body id="colored">
+{% include google-body.html %}
+
 <div class="container">
-    <div class="canvas">
+    <div class="canvas-container">
         {% include navigation.html %}
         <div class="content align-self-center white-bg">
             <div class="row h-100 justify-content-center">
                 {{ content }}
             </div>
         </div>
+
+        <button class="btn" onclick="topFunction()" id="back-to-top" title="Back to top">Back to top</button>
     </div>
 </div>
+
+<script>
+    const mybutton = document.getElementById("back-to-top");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 </body>
 </html>
