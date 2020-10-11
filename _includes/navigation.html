@@ -1,10 +1,7 @@
 <div class="content navigation pr-0 mt-5">
-    <!--    <div class="justify-content-center align-content-center white-bg">-->
     <div class="col-12">
         {% for item in site.data.navigation %}
-        <div class="row pl-30 mt-5 " id="{{item.name}}">
-            <!--                <div class="row pl-30 {% if forloop.first %}mt-25vh {% else %} mt-5 {% endif %}" id="{{item.name}}">-->
-
+        <div class="row pl-30 mt-5">
             <h5><a href="{{item.link}}">{{ item.name }}</a></h5>
         </div>
         {% endfor %}
