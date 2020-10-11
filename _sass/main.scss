@@ -103,3 +103,20 @@ div a:hover {
   color: #fdbad3;
 }
 
+.post-padding {
+  padding: 1vh 2vw;
+}
+
+.post-content-padding {
+  padding: 0 4vw 0 3vw;
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 3vh;
+  right: 2vw;
+  background-color: #b7306b;
+  color: white;
+  font-weight: bold;
+}
