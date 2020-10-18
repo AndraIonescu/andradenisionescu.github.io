@@ -1,5 +1,51 @@
 @charset "UTF-8";
 
+
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: .8rem !important;
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.24rem !important;
+  }
+
+  h4 {
+    font-size: 1rem !important;
+  }
+
+  #colored {
+    font-size: .7rem;
+  }
+
+  .navigation {
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+
+  .my-pic {
+    margin-top: 5vh;
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    height: 100%;
+    width: 20%;
+    float: left;
+  }
+
+  .my-pic {
+    height: 80vh;
+  }
+}
+
 .container {
   min-width: 70vw;
   font-family: Verdana, serif;
@@ -15,11 +61,7 @@
   margin-bottom: 10vh;
 }
 
-.navigation {
-  height: 100%;
-  width: 20%;
-  float: left;
-}
+
 
 .content {
   min-height: 80vh;
@@ -43,8 +85,6 @@
   background-image: url("/assets/images/me_pro.jpg");
   background-size: cover;
   background-position: left;
-  height: 80vh;
-
 }
 
 .white-bg {
