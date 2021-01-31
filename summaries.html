@@ -2,9 +2,8 @@
 title: Summaries
 ---
 
-<div class="blog-style">
+<div class="blog-style" hidden>
     <ul>
-        {% for i in (1..10) %}
         {% for paper in site.summaries %}
         <li id="post-{{forloop.index}}">
             <h2 class="row justify-content-center"><a href="{{ paper.url }}">{{ paper.title }}</a></h2>
@@ -20,7 +19,6 @@ title: Summaries
         {% unless forloop.last %}
         <hr class="summaries"/>
         {% endunless %}
-        {% endfor %}
         {% endfor %}
     </ul>
 </div>
