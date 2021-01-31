@@ -1,0 +1,28 @@
+---
+title: Summaries
+---
+
+<div class="blog-style">
+    <ul>
+        {% for i in (1..10) %}
+        {% for paper in site.summaries %}
+        <li id="post-{{forloop.index}}">
+            <h2 class="row justify-content-center"><a href="{{ paper.url }}">{{ paper.title }}</a></h2>
+
+            <div class="row justify-content-center item-text" id="paper-authors-{{forloop.index}}">
+                <p>{{ paper.authors }}</p>
+            </div>
+
+            <div class="row justify-content-center item-text" id="paper-venue-{{forloop.index}}">
+                <p>{{ paper.venue }} - {{ paper.year }}</p>
+            </div>
+        </li>
+        {% unless forloop.last %}
+        <hr class="summaries"/>
+        {% endunless %}
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+
+
