@@ -1,0 +1,42 @@
+---
+layout: default
+permalink: /categories/
+title: Categories
+---
+
+<div class="blog-style">
+    {% assign collection_tags = site.summaries | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
+
+    <div class="row justify-content-center">
+        <h2>Tags</h2>
+    </div>
+
+    <div class="row align-content-md-start">
+
+        <ul>
+            {% for category in collection_tags %}
+            <li>
+                {% capture category_name %}{{ category | capitalise }}{% endcapture %}
+
+                <div id="#{{ category_name | slugize }}">
+                    <h5 class="category-head">{{ category | capitalise }}</h5>
+
+                    <ul>
+                        {% for summary in site.summaries %}
+
+                            {% if summary.tags contains category %}
+                            <li>
+                                <div>
+                                    <a href="{{ site.baseurl }}{{ summary.url }}">{{summary.title}}</a>
+                                </div>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>

@@ -125,6 +125,7 @@
 .blog-style {
   margin-top: 8vh;
   padding: 1vh 2vw;
+  width: 100%;
 }
 
 .mb10 {
@@ -137,10 +138,11 @@
 
 .blog-style > ul {
   list-style-type: none;
+  padding-left: 0!important;
 }
 
 .item-text {
-  padding: 0 3vw;
+  padding: 0 2vw;
 }
 
 div a {
@@ -182,10 +184,6 @@ p {
   margin-bottom: 0.5rem !important;
 }
 
-hr.summaries {
-  margin-top: 0!important;
-}
-
 .blog-list {
   hr {
     margin-top: 0!important;
@@ -215,4 +213,12 @@ hr.summaries {
   bottom: 0;
   right: 0;
   margin-bottom: 1vh;
+}
+
+.category-head {
+  margin-top: 3vh;
+}
+
+.tags {
+  font-size: 0.8em;
 }

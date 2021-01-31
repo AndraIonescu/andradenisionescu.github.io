@@ -15,6 +15,14 @@ title: Summaries
             <div class="row justify-content-center item-text" id="paper-venue-{{forloop.index}}">
                 <p>{{ paper.venue }} - {{ paper.year }}</p>
             </div>
+
+            <div class="row justify-content-center item-text tags" id="paper-tags-{{forloop.index}}">
+                <p>Tags: </p>
+                {% for tag in paper.tags %}
+                <a href="{{site.baseurl}}/categories/#{{tag|slugize}}">{{tag}}</a>
+                {% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+            </div>
         </li>
         {% unless forloop.last %}
         <hr class="summaries"/>
