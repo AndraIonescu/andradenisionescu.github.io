@@ -2,7 +2,7 @@
   link: /
 - name: Publications
   link: /publications.html
-- name: Readings
-  link: /summaries.html
+#- name: Readings
+#  link: /summaries.html
 - name: Blog
   link: /blog.html

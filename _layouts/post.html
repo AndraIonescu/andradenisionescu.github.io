@@ -10,14 +10,14 @@ layout: default
     <div class="row justify-content-center mb3">
         <p>
             {{ page.date | date_to_string }}
-            {% assign author = site.authors | where: 'short_name', page.author | first %}
-            {% if author %}
-            - <a href="{{ author.url }}">{{ author.name }}</a>
-            {% endif %}
+<!--            {% assign author = site.authors | where: 'short_name', page.author | first %}-->
+<!--            {% if author %}-->
+<!--            - <a href="{{ author.url }}">{{ author.name }}</a>-->
+<!--            {% endif %}-->
         </p>
     </div>
 
-    <div class="row justify-content-center post-content-padding">
+    <div class="row post-content-padding">
         {{ content }}
     </div>
 
