@@ -53,7 +53,7 @@ My boyfriend appreciates it too, but first and foremost it is for myself.
 I am wondering, is my true style comfy sporty and relaxed? Did I just forced myself 
 into wearing shirts, dresses, heels, so I can look good in front of other people? Well, yes and no. I thought a lot about
 this, mostly because I have lots of clothes hanging in the closet, untouched for one entire year! I realised that
-I am wearing a uniform at work, although I don't have to, but it is something that helps me have a work-life
+I am wearing a uniform at the office, although I don't have to, but it is something that helps me have a work-life
 balance. It helps my mind making a distinction between work and personal life. 
 
 ##### 4. A car is useful. 
