@@ -126,7 +126,7 @@
   padding-left: 30% !important;
 }
 
-.blog-style {
+.center-style {
   margin-top: 30vh;
   padding: 1vh 2vw;
   width: 100%;
@@ -150,7 +150,7 @@
 }
 
 div a {
-  color: #b7306b !important;
+  color: #b7306b;
 }
 
 div a:hover {
@@ -181,7 +181,7 @@ div a:hover {
 }
 
 #publications {
-  margin-top: 20vh;
+  margin-top: 5vh;
   padding: 2vh 2vw;
 }
 
@@ -229,5 +229,22 @@ div a:hover {
 }
 
 .author {
-  text-decoration: underline;
+  font-weight: bold;
+}
+
+.badge-width {
+  width: 15%;
+}
+
+#news {
+  margin-top: 20%;
+  font-size: large;
+}
+
+#tags {
+  margin-top: 5vh;
+}
+
+#back-button {
+  color: #b7306b;
 }

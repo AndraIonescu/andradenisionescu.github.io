@@ -4,11 +4,11 @@ permalink: /categories/
 title: Categories
 ---
 
-<div class="blog-style">
+<div class="center-style" id="tags">
     {% assign collection_tags = site.summaries | map: 'tags' | join: ',' | split: ',' | uniq | sort %}
 
     <div class="row justify-content-center">
-        <h2>Tags</h2>
+        <h4>Tags</h4>
     </div>
 
     <div class="row align-content-md-start">
@@ -19,7 +19,7 @@ title: Categories
                 {% capture category_name %}{{ category | capitalise }}{% endcapture %}
 
                 <div id="#{{ category_name | slugize }}">
-                    <h5 class="category-head">{{ category | capitalise }}</h5>
+                    <h6 class="category-head">{{ category | capitalise }}</h6>
 
                     <ul>
                         {% for summary in site.summaries %}
@@ -27,7 +27,8 @@ title: Categories
                             {% if summary.tags contains category %}
                             <li>
                                 <div>
-                                    <a href="{{ site.baseurl }}{{ summary.url }}">{{summary.title}}</a>
+<!--                                    <a href="{{ site.baseurl }}{{ summary.url }}">{{summary.title}}</a>-->
+                                    {{summary.title}}
                                 </div>
                             </li>
                             {% endif %}
@@ -37,6 +38,10 @@ title: Categories
             </li>
             {% endfor %}
         </ul>
+    </div>
+
+    <div class="row justify-content-end" >
+        <a class="btn" href="{{site.baseurl}}/news.html" id="back-button">Back</a>
     </div>
 
 </div>
